@@ -19,6 +19,7 @@ nnoremap <F3> :set invnumber invrelativenumber<CR>
 au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | source /etc/vim/syntax/nginx.vim | endif
 
 "" General
+set modeline
 set showmode
 set wildmenu
 set showcmd
