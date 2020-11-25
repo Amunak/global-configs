@@ -15,6 +15,9 @@ set pastetoggle=<F2>
 "" Number Toggle
 nnoremap <F3> :set invnumber invrelativenumber<CR>
 
+"" Allow saving of files as sudo
+ca w!! w !sudo tee > /dev/null %
+
 "" Additional syntax highlighting
 au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | source /etc/vim/syntax/nginx.vim | endif
 
