@@ -83,7 +83,7 @@ case "$HOSTNAME_FULL." in
         HOSTNAME_WCOLOR="\[\033[0;47;30m\] $HOSTNAME_SHORT \[\033[0;100;39m\] $HOSTNAME_DOMAIN";;
 sanguine.*)
         HOSTNAME_WCOLOR="\[\033[0;47;30m\] $HOSTNAME_FULL";;
-argent.*)
+*.home.*)
         HOSTNAME_WCOLOR="\[\033[0;104;97m\] $HOSTNAME_FULL";;
 *)
         if [[ -z "$HOSTNAME_DOMAIN" ]]; then
