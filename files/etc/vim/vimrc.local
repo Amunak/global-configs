@@ -23,6 +23,7 @@ ca w!! w !sudo tee > /dev/null %
 
 "" Additional syntax highlighting
 au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | source /etc/vim/syntax/nginx.vim | endif
+au BufRead,BufNewFile /etc/nftables*,*.nft,nftables.conf setfiletype nftables | source /etc/vim/syntax/nftables.vim
 
 "" General
 set modeline
