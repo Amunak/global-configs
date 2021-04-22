@@ -15,6 +15,9 @@ set pastetoggle=<F2>
 "" Number Toggle
 nnoremap <F3> :set invnumber invrelativenumber<CR>
 
+"" Show whitespace toggle
+nnoremap <F4> :set invlist<CR>
+
 "" Allow saving of files as sudo
 ca w!! w !sudo tee > /dev/null %
 
@@ -56,9 +59,13 @@ set softtabstop=4       " Number of spaces per Tab
 set undolevels=1000     " Number of undo levels
 set backspace=indent,eol,start  " Backspace behaviour
 
+"" Formatting
 set noexpandtab
 set copyindent
 set preserveindent
 set softtabstop=0
 set shiftwidth=4
 set tabstop=4
+
+"" Whitespace characters
+:set listchars=eol:$,tab:>\ ,trail:~,extends:>,precedes:<,space:·
