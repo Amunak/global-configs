@@ -15,8 +15,9 @@ export EDITOR='/usr/bin/vim'
 
 # history
 shopt -s histappend
-HISTSIZE=1000
-HISTFILESIZE=4000
+export HISTSIZE=20000
+export HISTFILESIZE=20000
+export HISTCONTROL='ignorespace:ignoredups'
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
