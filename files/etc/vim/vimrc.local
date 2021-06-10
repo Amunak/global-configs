@@ -72,4 +72,8 @@ set shiftwidth=4
 set tabstop=4
 
 "" Whitespace characters
-set listchars=eol:$,tab:>\ ,trail:~,extends:>,precedes:<,space:·
+if has("patch-7.4.710")
+	set listchars=eol:$,tab:>\ ,trail:~,extends:>,precedes:<,space:·
+else
+	set listchars=eol:$,tab:>\ ,trail:~,extends:>,precedes:<
+endif
