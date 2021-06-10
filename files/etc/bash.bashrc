@@ -141,3 +141,6 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
                 fi
         }
 fi
+
+# Save history after each command
+ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
