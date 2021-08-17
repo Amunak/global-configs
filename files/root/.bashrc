@@ -7,6 +7,7 @@
 
 alias s='systemctl'
 alias j='journalctl'
+alias ncdu='ncdu --color="dark"'
 
 # Some more alias to avoid making mistakes:
  alias rm='rm -i'
