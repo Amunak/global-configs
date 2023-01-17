@@ -84,11 +84,11 @@ case "$HOSTNAME_FULL" in
         HOSTNAME_WCOLOR="\[\033[0;47;30m\] $HOSTNAME_SHORT \[\033[0;100;39m\] $HOSTNAME_DOMAIN";;
 sanguine.*)
         HOSTNAME_WCOLOR="\[\033[0;47;30m\] $HOSTNAME_FULL";;
-emerald.xcx.cz)
+emerald.*)
         HOSTNAME_WCOLOR="\[\033[97m\]\[\033[48;5;29m\] $HOSTNAME_FULL";;
-fern.|greenland.*)
+fern.*|*.greenland.*)
         HOSTNAME_WCOLOR="\[\033[97m\]\[\033[48;5;64m\] $HOSTNAME_FULL";;
-arch.*)
+*.arch.*)
         HOSTNAME_WCOLOR="\[\033[97m\]\[\033[48;5;125m\] $HOSTNAME_FULL";;
 *.home.*)
         HOSTNAME_WCOLOR="\[\033[0;104;97m\] $HOSTNAME_FULL";;
