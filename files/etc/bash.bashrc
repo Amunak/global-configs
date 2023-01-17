@@ -88,6 +88,8 @@ emerald.xcx.cz)
         HOSTNAME_WCOLOR="\[\033[97m\]\[\033[48;5;29m\] $HOSTNAME_FULL";;
 fern.|greenland.*)
         HOSTNAME_WCOLOR="\[\033[97m\]\[\033[48;5;64m\] $HOSTNAME_FULL";;
+arch.*)
+        HOSTNAME_WCOLOR="\[\033[97m\]\[\033[48;5;125m\] $HOSTNAME_FULL";;
 *.home.*)
         HOSTNAME_WCOLOR="\[\033[0;104;97m\] $HOSTNAME_FULL";;
 *)
