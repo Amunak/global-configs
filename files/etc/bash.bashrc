@@ -80,14 +80,10 @@ else
 	HOSTNAME_DOMAIN=`hostname -d`
 fi
 case "$HOSTNAME_FULL" in
-*.sanguine.*)
-        HOSTNAME_WCOLOR="\[\033[0;47;30m\] $HOSTNAME_SHORT \[\033[0;100;39m\] $HOSTNAME_DOMAIN";;
-sanguine.*)
-        HOSTNAME_WCOLOR="\[\033[0;47;30m\] $HOSTNAME_FULL";;
 emerald.*)
         HOSTNAME_WCOLOR="\[\033[97m\]\[\033[48;5;29m\] $HOSTNAME_FULL";;
-fern.*|*.greenland.*)
-        HOSTNAME_WCOLOR="\[\033[97m\]\[\033[48;5;64m\] $HOSTNAME_FULL";;
+*.prouza.*)
+        HOSTNAME_WCOLOR="\[\033[97m\]\[\033[48;5;213m\] $HOSTNAME_FULL";;
 *.arch.*)
         HOSTNAME_WCOLOR="\[\033[97m\]\[\033[48;5;125m\] $HOSTNAME_FULL";;
 *.home.*)
